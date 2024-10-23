@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\b\d+\.\d+\b'
+texto = 'O preço do produto é R$ 9.99 ou $15.50'
+
+ocorrencias = re.findall(padrao, texto)
+print("Números decimais encontrados:", ocorrencias)
