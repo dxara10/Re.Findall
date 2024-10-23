@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\b\w+ing\b'
+texto = 'Correndo, nadando, pulando, cantando'
+
+ocorrencias = re.findall(padrao, texto)
+print("Palavras que terminam com 'ing':", ocorrencias)
