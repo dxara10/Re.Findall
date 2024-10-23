@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\b(\w+)\b.*\b\1\b'
+texto = 'Este é um exemplo de frase com palavras repetidas.'
+
+ocorrencias = re.findall(padrao, texto)
+print("Palavras duplicadas encontradas:", ocorrencias)
