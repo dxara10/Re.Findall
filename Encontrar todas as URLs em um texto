@@ -1,0 +1,7 @@
+import re
+
+padrao = r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+'
+texto = 'Visite nosso site em https://www.exemplo.com.br'
+
+ocorrencias = re.findall(padrao, texto)
+print("URLs encontradas:", ocorrencias)
