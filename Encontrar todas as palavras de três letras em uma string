@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\b\w{3}\b'
+texto = 'Python é uma linguagem de programação poderosa.'
+
+ocorrencias = re.findall(padrao, texto)
+print("Palavras de três letras encontradas:", ocorrencias)
