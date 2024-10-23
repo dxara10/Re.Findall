@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\b[A-Z]\w*'
+texto = 'Python é uma linguagem de programação poderosa e Fácil de aprender.'
+
+ocorrencias = re.findall(padrao, texto)
+print("Palavras que começam com letra maiúscula:", ocorrencias)
