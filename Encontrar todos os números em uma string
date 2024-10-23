@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\d+'
+texto = 'O número de telefone é 123-456-7890 e o código postal é 54321.'
+
+ocorrencias = re.findall(padrao, texto)
+print("Números encontrados:", ocorrencias)
