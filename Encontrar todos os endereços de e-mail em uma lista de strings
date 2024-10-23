@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\b[\w\.-]+@[\w\.-]+\.\w+\b'
+lista = ['usuario1@example.com', 'contato@example.com', 'invalido', 'usuario2@example.com']
+
+ocorrencias = [email for email in lista if re.findall(padrao, email)]
+print("Endereços de e-mail encontrados:", ocorrencias)
