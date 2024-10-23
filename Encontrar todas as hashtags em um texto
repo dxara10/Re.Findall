@@ -1,0 +1,7 @@
+import re
+
+padrao = r'#\w+'
+texto = 'Hoje está um belo dia! #sol #verão #praia'
+
+ocorrencias = re.findall(padrao, texto)
+print("Hashtags encontradas:", ocorrencias)
